@@ -1,0 +1,981 @@
+:root {
+    --label-light-secondary: rgba(60, 60, 67, 0.6);
+    --light-indigo: rgba(116, 89, 217, 1);
+    --light-black: rgba(17, 38, 60, 1);
+    --grey-50: rgba(208, 209, 210, 1);
+    --body-input-14px-r-font-family: "Poppins", Helvetica;
+    --body-input-14px-r-font-weight: 400;
+    --body-input-14px-r-font-size: 14px;
+    --body-input-14px-r-letter-spacing: 0px;
+    --body-input-14px-r-line-height: 22px;
+    --body-input-14px-r-font-style: normal;
+    --body-input-14px-SB-font-family: "Poppins", Helvetica;
+    --body-input-14px-SB-font-weight: 600;
+    --body-input-14px-SB-font-size: 14px;
+    --body-input-14px-SB-letter-spacing: 0px;
+    --body-input-14px-SB-line-height: 22px;
+    --body-input-14px-SB-font-style: normal;
+    --internal-tool-regular-font-family: "Poppins", Helvetica;
+    --internal-tool-regular-font-weight: 400;
+    --internal-tool-regular-font-size: 15px;
+    --internal-tool-regular-letter-spacing: 0.15px;
+    --internal-tool-regular-line-height: normal;
+    --internal-tool-regular-font-style: normal;
+  }  
+
+.informacin-ciudad {
+    background-color: #fafbff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .informacin-ciudad .div {
+    background-color: #fafbff;
+    width: 1440px;
+    height: 1355px;
+    position: relative;
+  }
+  
+  .informacin-ciudad .overlap {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .chevron-right {
+    top: 142px;
+    left: 252px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .informacin-ciudad .barra-de-navegacin {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px #e1ecf880;
+  }
+  
+  .informacin-ciudad .overlap-group {
+    position: absolute;
+    width: 250px;
+    height: 46px;
+    top: 556px;
+    left: 30px;
+    background-color: #5932ea;
+    border-radius: 8px;
+  }
+  
+  .informacin-ciudad .list-menu {
+    position: relative;
+    width: 236px;
+    height: 24px;
+    top: 10px;
+    left: 9px;
+  }
+  
+  .informacin-ciudad .img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .text-wrapper {
+    position: absolute;
+    top: 3px;
+    left: 41px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .chevron-right-2 {
+    top: 5px;
+    left: 218px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .informacin-ciudad .list-menu-2 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 139px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .text-wrapper-2 {
+    position: absolute;
+    top: 1px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .chevron-right-3 {
+    top: 2px;
+    left: 213px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .informacin-ciudad .list-menu-3 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 203px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .text-wrapper-3 {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .chevron-right-4 {
+    top: 4px;
+    left: 215px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .informacin-ciudad .list-menu-4 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 267px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .overlap-2 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 331px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .list-menu-5 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .list-menu-6 {
+    position: absolute;
+    width: 231px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .list-menu-7 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 395px;
+    left: 77px;
+  }
+  
+  .informacin-ciudad .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .chevron-right-5 {
+    top: 2px;
+    left: 177px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .informacin-ciudad .list-menu-8 {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    top: 452px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .list-menu-9 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 511px;
+    left: 80px;
+  }
+  
+  .informacin-ciudad .list-menu-10 {
+    position: absolute;
+    width: 195px;
+    height: 21px;
+    top: 626px;
+    left: 80px;
+  }
+  
+  .informacin-ciudad .element-icon {
+    top: 511px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .overlap-group-2 {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  
+  .informacin-ciudad .path {
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .path-2 {
+    top: 7px;
+    position: absolute;
+    width: 18px;
+    height: 7px;
+    left: 0;
+  }
+  
+  .informacin-ciudad .path-3 {
+    top: 11px;
+    position: absolute;
+    width: 18px;
+    height: 7px;
+    left: 0;
+  }
+  
+  .informacin-ciudad .imagix {
+    position: absolute;
+    width: 226px;
+    height: 100px;
+    top: 11px;
+    left: 32px;
+    object-fit: cover;
+  }
+  
+  .informacin-ciudad .element-icon-stock {
+    top: 394px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 39px;
+  }
+  
+  .informacin-ciudad .overlap-3 {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    top: 925px;
+    left: 28px;
+    background-image: url(./img/union.svg);
+    background-size: 100% 100%;
+  }
+  
+  .informacin-ciudad .label {
+    position: absolute;
+    top: 28px;
+    left: 101px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--label-light-secondary);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  
+  .informacin-ciudad .label-2 {
+    position: absolute;
+    top: 30px;
+    left: 195px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--light-indigo);
+    font-size: 13px;
+    text-align: right;
+    line-height: 18px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  
+  .informacin-ciudad .element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 24px;
+    object-fit: cover;
+  }
+  
+  .informacin-ciudad .frame {
+    display: flex;
+    width: 275px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 165px 10px 10px;
+    position: absolute;
+    top: 1130px;
+    left: 24px;
+    border-radius: 8px;
+  }
+  
+  .informacin-ciudad .img-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .informacin-ciudad .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Manrope-Medium", Helvetica;
+    font-weight: 500;
+    color: #84828a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .group-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 623px;
+    left: 41px;
+  }
+  
+  .informacin-ciudad .overlap-4 {
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .informacin-ciudad .ellipse {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 4px;
+    border-radius: 4px;
+    border: 2px solid;
+    border-color: #9197b3;
+  }
+  
+  .informacin-ciudad .ellipse-2 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 10px;
+  }
+  
+  .informacin-ciudad .ellipse-3 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 0;
+  }
+  
+  .informacin-ciudad .overlap-group-3 {
+    position: absolute;
+    width: 20px;
+    height: 7px;
+    top: 13px;
+    left: 2px;
+  }
+  
+  .informacin-ciudad .subtract {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 11px;
+  }
+  
+  .informacin-ciudad .subtract-2 {
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .rectangle {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 0;
+    left: 4px;
+  }
+  
+  .informacin-ciudad .frame-2 {
+    display: flex;
+    width: 1061px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 16px;
+    left: 329px;
+  }
+  
+  .informacin-ciudad .hola-erick-promotor {
+    position: relative;
+    width: 502px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .span {
+    color: #000000;
+  }
+  
+  .informacin-ciudad .text-wrapper-6 {
+    color: #fe0404;
+  }
+  
+  .informacin-ciudad .frame-3 {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .informacin-ciudad .group {
+    position: relative;
+    width: 346px;
+    height: 40px;
+  }
+  
+  .informacin-ciudad .overlap-group-4 {
+    position: relative;
+    width: 344px;
+    height: 40px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+  }
+  
+  .informacin-ciudad .text-wrapper-7 {
+    position: absolute;
+    top: 12px;
+    left: 46px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #a39f9f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .search-normal {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+  }
+  
+  .informacin-ciudad .ellipse-4 {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .informacin-ciudad .earning {
+    position: absolute;
+    width: 1055px;
+    height: 100px;
+    top: 130px;
+    left: 357px;
+  }
+  
+  .informacin-ciudad .div-wrapper {
+    position: relative;
+    width: 1143px;
+    height: 220px;
+    top: -50px;
+    left: -60px;
+    background-image: url(./img/rectangle-15.svg);
+    background-size: 100% 100%;
+  }
+  
+  .informacin-ciudad #exito {
+    position: absolute;
+    width: 1100px;
+    top: 55px;
+    left: 100px;
+    font-family: "Port Lligat Slab-Regular", Helvetica;
+    font-weight: 500;
+    color: #000000a8;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .overlap-5 {
+    position: absolute;
+    width: 1039px;
+    height: 1058px;
+    top: 263px;
+    left: 350px;
+  }
+  
+  .informacin-ciudad .overlap-wrapper {
+    position: absolute;
+    width: 1039px;
+    height: 1058px;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4.62px 18.47px #0000000d;
+  }
+  
+  .informacin-ciudad .overlap-6 {
+    position: relative;
+    width: 1021px;
+    height: 1092px;
+  }
+  
+  .informacin-ciudad .group-2 {
+    position: absolute;
+    width: 1021px;
+    height: 1058px;
+    top: 0;
+    left: 0;
+    background-image: url(./img/bounds.png);
+    background-size: 100% 100%;
+  }
+  
+  .informacin-ciudad .sede-bucaramanga {
+    position: absolute;
+    width: 475px;
+    height: 71px;
+    top: 22px;
+    left: 461px;
+    transform: rotate(-0.25deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-8 {
+    color: #df0404;
+    letter-spacing: -0.50px;
+  }
+  
+  .informacin-ciudad .text-wrapper-9 {
+    color: #5d5fef;
+    letter-spacing: -0.50px;
+  }
+  
+  .informacin-ciudad .frame-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 203px;
+    left: 32px;
+  }
+  
+  .informacin-ciudad .frame-5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .informacin-ciudad .name {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .tomiwa-oyeledu {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .input {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .informacin-ciudad .text-wrapper-10 {
+    position: absolute;
+    width: 240px;
+    top: 437px;
+    left: 32px;
+    transform: rotate(0.47deg);
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-11 {
+    position: absolute;
+    width: 208px;
+    top: 464px;
+    left: 33px;
+    transform: rotate(0.47deg);
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-12 {
+    position: absolute;
+    width: 271px;
+    top: 511px;
+    left: 31px;
+    transform: rotate(0.47deg);
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-13 {
+    width: 82px;
+    top: 540px;
+    left: 31px;
+    position: absolute;
+    transform: rotate(0.47deg);
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-14 {
+    position: absolute;
+    width: 229px;
+    top: 588px;
+    left: 29px;
+    transform: rotate(0.47deg);
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-15 {
+    width: 72px;
+    top: 613px;
+    left: 28px;
+    position: absolute;
+    transform: rotate(0.47deg);
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-16 {
+    position: absolute;
+    width: 240px;
+    top: 665px;
+    left: 27px;
+    transform: rotate(0.47deg);
+    opacity: 0.5;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .text-wrapper-17 {
+    position: absolute;
+    width: 65px;
+    top: 694px;
+    left: 28px;
+    transform: rotate(0.47deg);
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .informacin-ciudad .frame-6 {
+    position: absolute;
+    width: 463px;
+    height: 279px;
+    top: 94px;
+    left: 473px;
+  }
+  
+  .informacin-ciudad .frame-7 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .informacin-ciudad .text-wrapper-18 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--light-black);
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .informacin-ciudad .feather-icon-alert {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .informacin-ciudad .frame-8 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 0;
+    background-image: url(./img/frame-1322-1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .informacin-ciudad .frame-9 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 50px;
+    left: 240px;
+  }
+  
+  .informacin-ciudad .rectangle-wrapper {
+    position: relative;
+    width: 30px;
+    height: 22px;
+  }
+  
+  .informacin-ciudad .rectangle-2 {
+    position: relative;
+    height: 4px;
+    top: 9px;
+    background-color: var(--light-indigo);
+    border-radius: 100px;
+  }
+  
+  .informacin-ciudad .frame-10 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .informacin-ciudad .label-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--body-input-14px-r-font-family);
+    font-weight: var(--body-input-14px-r-font-weight);
+    color: var(--grey-50);
+    font-size: var(--body-input-14px-r-font-size);
+    letter-spacing: var(--body-input-14px-r-letter-spacing);
+    line-height: var(--body-input-14px-r-line-height);
+    white-space: nowrap;
+    font-style: var(--body-input-14px-r-font-style);
+  }
+  
+  .informacin-ciudad .label-4 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-input-14px-SB-font-family);
+    font-weight: var(--body-input-14px-SB-font-weight);
+    color: var(--light-black);
+    font-size: var(--body-input-14px-SB-font-size);
+    line-height: var(--body-input-14px-SB-line-height);
+    letter-spacing: var(--body-input-14px-SB-letter-spacing);
+    white-space: nowrap;
+    font-style: var(--body-input-14px-SB-font-style);
+  }
+  
+  .informacin-ciudad .frame-11 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 126px;
+    left: 240px;
+  }
+  
+  .informacin-ciudad .rectangle-3 {
+    position: relative;
+    height: 4px;
+    top: 9px;
+    background-color: #7459d980;
+    border-radius: 100px;
+  }
+  
+  .informacin-ciudad .frame-12 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    top: 202px;
+    left: 240px;
+  }
+  
+  .informacin-ciudad .product {
+    position: absolute;
+    width: 733px;
+    height: 777px;
+    top: 315px;
+    left: 287px;
+  }
+  
+  .informacin-ciudad .component {
+    position: absolute;
+    width: 81px;
+    height: 23px;
+    top: 11px;
+    left: 42px;
+  }
+  
+  .informacin-ciudad .vector {
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 6px;
+    left: 0;
+  }
+  
+  .informacin-ciudad .text-wrapper-19 {
+    position: absolute;
+    top: -1px;
+    left: 33px;
+    transform: rotate(-0.20deg);
+    font-family: var(--internal-tool-regular-font-family);
+    font-weight: var(--internal-tool-regular-font-weight);
+    color: #000000;
+    font-size: var(--internal-tool-regular-font-size);
+    letter-spacing: var(--internal-tool-regular-letter-spacing);
+    line-height: var(--internal-tool-regular-line-height);
+    font-style: var(--internal-tool-regular-font-style);
+  }
+  
+  .informacin-ciudad .image {
+    position: absolute;
+    width: 328px;
+    height: 157px;
+    top: 41px;
+    left: 42px;
+    object-fit: cover;
+  }
+  
