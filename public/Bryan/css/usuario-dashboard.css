@@ -1,0 +1,621 @@
+.usuario-dashboard {
+    background-color: #fafbff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .usuario-dashboard .overlap-wrapper {
+    background-color: #fafbff;
+    width: 1440px;
+    height: 1238px;
+  }
+  
+  .usuario-dashboard .overlap {
+    position: relative;
+    height: 1238px;
+  }
+  
+  .usuario-dashboard .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 1238px;
+    top: 0;
+    left: 0;
+  }
+  
+  .usuario-dashboard .chevron-right {
+    top: 142px;
+    left: 252px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .usuario-dashboard .rectangle {
+    position: absolute;
+    width: 1152px;
+    height: 655px;
+    top: 83px;
+    left: 288px;
+  }
+  
+  .usuario-dashboard .img {
+    position: absolute;
+    width: 680px;
+    height: 598px;
+    top: 640px;
+    left: 288px;
+  }
+  
+  .usuario-dashboard .group {
+    position: absolute;
+    width: 510px;
+    height: 64px;
+    top: 1089px;
+    left: 376px;
+  }
+  
+  .usuario-dashboard .div {
+    position: relative;
+    width: 508px;
+    height: 64px;
+    background-color: #ebebeb;
+    border-radius: 30px;
+  }
+  
+  .usuario-dashboard .ellipse {
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    top: 10px;
+    left: 15px;
+    background-color: #d9d9d9;
+    border-radius: 22.5px / 22px;
+  }
+  
+  .usuario-dashboard .text-wrapper {
+    position: absolute;
+    top: 21px;
+    left: 79px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .overlap-group-wrapper {
+    position: absolute;
+    width: 510px;
+    height: 64px;
+    top: 1012px;
+    left: 374px;
+  }
+  
+  .usuario-dashboard .ellipse-2 {
+    top: 8px;
+    left: 17px;
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    background-color: #d9d9d9;
+    border-radius: 22.5px / 22px;
+  }
+  
+  .usuario-dashboard .text-wrapper-2 {
+    position: absolute;
+    top: 19px;
+    left: 79px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .div-wrapper {
+    position: absolute;
+    width: 510px;
+    height: 64px;
+    top: 935px;
+    left: 374px;
+  }
+  
+  .usuario-dashboard .text-wrapper-3 {
+    position: absolute;
+    top: 20px;
+    left: 79px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .ellipse-3 {
+    top: 10px;
+    left: 17px;
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    background-color: #d9d9d9;
+    border-radius: 22.5px / 22px;
+  }
+  
+  .usuario-dashboard .group-2 {
+    position: absolute;
+    width: 510px;
+    height: 64px;
+    top: 858px;
+    left: 376px;
+  }
+  
+  .usuario-dashboard .rectangle-2 {
+    position: absolute;
+    width: 574px;
+    height: 352px;
+    top: 640px;
+    left: 866px;
+  }
+  
+  .usuario-dashboard .rectangle-3 {
+    position: absolute;
+    width: 574px;
+    height: 336px;
+    top: 902px;
+    left: 866px;
+  }
+  
+  .usuario-dashboard .text-wrapper-4 {
+    position: absolute;
+    height: 59px;
+    top: 150px;
+    left: 680px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .text-wrapper-5 {
+    position: absolute;
+    height: 59px;
+    top: 707px;
+    left: 455px;
+    transform: rotate(-0.21deg);
+    font-family: "Work Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--iris-100);
+    font-size: 50.2px;
+    letter-spacing: -1.00px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .group-3 {
+    position: absolute;
+    width: 227px;
+    height: 79px;
+    top: 806px;
+    left: 1046px;
+  }
+  
+  .usuario-dashboard .overlap-2 {
+    position: relative;
+    width: 225px;
+    height: 79px;
+    background-color: #5856d6;
+    border-radius: 30px;
+  }
+  
+  .usuario-dashboard .text-wrapper-6 {
+    position: absolute;
+    top: 28px;
+    left: 41px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .group-4 {
+    position: absolute;
+    width: 242px;
+    height: 79px;
+    top: 1050px;
+    left: 1046px;
+  }
+  
+  .usuario-dashboard .overlap-3 {
+    position: relative;
+    width: 240px;
+    height: 79px;
+    background-color: #5856d6;
+    border-radius: 30px;
+  }
+  
+  .usuario-dashboard .text-wrapper-7 {
+    position: absolute;
+    width: 101px;
+    top: 28px;
+    left: 70px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+  }
+  
+  .usuario-dashboard .text-wrapper-8 {
+    position: absolute;
+    top: 742px;
+    left: 989px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .text-wrapper-9 {
+    position: absolute;
+    top: 988px;
+    left: 1030px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .group-5 {
+    position: absolute;
+    width: 508px;
+    height: 64px;
+    top: 781px;
+    left: 376px;
+    background-color: #ebebeb;
+    border-radius: 30px;
+  }
+  
+  .usuario-dashboard .text-wrapper-10 {
+    position: absolute;
+    top: 801px;
+    left: 455px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 0.50px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .ellipse-4 {
+    top: 791px;
+    left: 391px;
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    background-color: #d9d9d9;
+    border-radius: 22.5px / 22px;
+  }
+  
+  .usuario-dashboard .barra-de-navegacin {
+    position: absolute;
+    width: 306px;
+    height: 1198px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px #e1ecf880;
+  }
+  
+  .usuario-dashboard .list-menu-wrapper {
+    position: absolute;
+    width: 250px;
+    height: 46px;
+    top: 130px;
+    left: 28px;
+    background-color: #5932ea;
+    border-radius: 8px;
+  }
+  
+  .usuario-dashboard .list-menu {
+    position: relative;
+    width: 231px;
+    height: 24px;
+    top: 9px;
+    left: 11px;
+  }
+  
+  .usuario-dashboard .img-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .usuario-dashboard .text-wrapper-11 {
+    position: absolute;
+    top: 1px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .chevron-right-2 {
+    top: 2px;
+    left: 213px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .usuario-dashboard .list-menu-2 {
+    width: 233px;
+    top: 203px;
+    left: 39px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .usuario-dashboard .text-wrapper-12 {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .chevron-right-3 {
+    top: 4px;
+    left: 215px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .usuario-dashboard .list-menu-3 {
+    width: 233px;
+    top: 267px;
+    left: 39px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .usuario-dashboard .list-menu-4 {
+    width: 233px;
+    top: 330px;
+    left: 41px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .usuario-dashboard .list-menu-5 {
+    width: 236px;
+    top: 397px;
+    left: 42px;
+    position: absolute;
+    height: 24px;
+  }
+  
+  .usuario-dashboard .text-wrapper-13 {
+    position: absolute;
+    top: 3px;
+    left: 41px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #9197b3;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .chevron-right-4 {
+    top: 5px;
+    left: 218px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .usuario-dashboard .imagix {
+    position: absolute;
+    width: 226px;
+    height: 100px;
+    top: 11px;
+    left: 32px;
+    object-fit: cover;
+  }
+  
+  .usuario-dashboard .overlap-4 {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    top: 925px;
+    left: 28px;
+    background-image: url(./img/union.svg);
+    background-size: 100% 100%;
+  }
+  
+  .usuario-dashboard .label {
+    position: absolute;
+    top: 28px;
+    left: 101px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--label-light-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .label-2 {
+    position: absolute;
+    top: 31px;
+    left: 206px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--light-indigo);
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .usuario-dashboard .element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 24px;
+    object-fit: cover;
+  }
+  
+  .usuario-dashboard .frame {
+    display: flex;
+    width: 275px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 165px 10px 10px;
+    position: absolute;
+    top: 1130px;
+    left: 24px;
+    border-radius: 8px;
+  }
+  
+  .usuario-dashboard .img-3 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .usuario-dashboard .text-wrapper-14 {
+    position: relative;
+    width: fit-content;
+    font-family: "Manrope-Medium", Helvetica;
+    font-weight: 500;
+    color: #84828a;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .mapa {
+    position: absolute;
+    width: 1085px;
+    height: 528px;
+    top: 192px;
+    left: 341px;
+    object-fit: cover;
+  }
+  
+  .usuario-dashboard .frame-2 {
+    display: flex;
+    width: 1061px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 35px;
+    left: 330px;
+  }
+  
+  .usuario-dashboard .hola-erick-usuario {
+    position: relative;
+    width: 502px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .span {
+    color: #000000;
+  }
+  
+  .usuario-dashboard .text-wrapper-15 {
+    color: #df0404;
+  }
+  
+  .usuario-dashboard .frame-3 {
+    display: flex;
+    width: 480px;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .usuario-dashboard .group-6 {
+    position: relative;
+    width: 346px;
+    height: 40px;
+  }
+  
+  .usuario-dashboard .overlap-group-2 {
+    position: relative;
+    width: 344px;
+    height: 40px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+  }
+  
+  .usuario-dashboard .text-wrapper-16 {
+    position: absolute;
+    top: 12px;
+    left: 46px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #a39f9f;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .usuario-dashboard .search-normal {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+  }
+  
+  .usuario-dashboard .ellipse-5 {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  
