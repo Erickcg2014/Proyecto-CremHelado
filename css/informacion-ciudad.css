@@ -553,13 +553,13 @@
     background-size: 100% 100%;
   }
   
-  .informacin-ciudad .p {
+  .informacin-ciudad #exito {
     position: absolute;
-    width: 521px;
+    width: 1100px;
     top: 55px;
-    left: 330px;
+    left: 100px;
     font-family: "Port Lligat Slab-Regular", Helvetica;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000a8;
     font-size: 36px;
     text-align: center;

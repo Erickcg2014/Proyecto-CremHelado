@@ -282,22 +282,7 @@
     left: 0;
   }
   
-  .asociacin-mapas .path-2 {
-    position: absolute;
-    width: 18px;
-    height: 7px;
-    top: 7px;
-    left: 0;
-  }
-  
-  .asociacin-mapas .path-3 {
-    position: absolute;
-    width: 18px;
-    height: 7px;
-    top: 11px;
-    left: 0;
-  }
-  
+
   .asociacin-mapas .imagix {
     position: absolute;
     width: 226px;
@@ -1291,7 +1276,7 @@
   
   .asociacin-mapas .overlap-9 {
     position: relative;
-    width: 1144px;
+    width: 1180px;
     height: 220px;
     top: -50px;
     left: -60px;
@@ -1299,16 +1284,16 @@
     background-size: 100% 100%;
   }
   
-  .asociacin-mapas .p {
+  .asociacin-mapas #exito {
     position: absolute;
-    width: 521px;
+    width: 1100px;
     top: 55px;
-    left: 330px;
+    left: 100px;
     font-family: "Port Lligat Slab-Regular", Helvetica;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000a8;
     font-size: 36px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0;
     line-height: normal;
   }
@@ -1355,6 +1340,7 @@
     left: 339px;
     overflow: hidden;
   }
+  
   
   .asociacin-mapas .overlap-11 {
     position: absolute;
@@ -1897,3 +1883,14 @@
     object-fit: cover;
   }
   
+  .blurred-container{
+    position: absolute;
+    width: 131.04px;
+    height: 415.7px;
+    left: 862.95px;
+    top: 693.99px;
+
+    background: linear-gradient(180deg, rgba(51, 47, 103, 0.14) 2.1%, rgba(69, 65, 133, 0.25) 57.45%, rgba(78, 76, 162, 0.0586787) 98.26%);
+    box-shadow: 0px -27.3001px 43.6802px rgba(26, 24, 53, 0.506567);
+    backdrop-filter: blur(7.90488px);
+  }
