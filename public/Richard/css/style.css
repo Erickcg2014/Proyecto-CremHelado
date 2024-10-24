@@ -43,41 +43,41 @@
   
   .dashboard-principal .img {
     position: absolute;
-    width: 560px;
-    height: 352px;
-    top: 1216px;
+    width: 562.5px;
+    height: 289px;
+    top: 1242.5px;
     left: 880px;
   }
   
   .dashboard-principal .cuadrado {
     position: absolute;
-    width: 265px;
-    height: 217px;
-    top: 1304px;
-    left: 892px;
+    width: 230px;
+    height: 180px;
+    top: 1338px;
+    left: 890px;
   }
   
   .dashboard-principal .cuadrado-2 {
-    width: 265px;
-    top: 1307px;
-    left: 1043px;
+    width: 230px;
+    top: 1338px;
+    left: 1040px;
     position: absolute;
-    height: 217px;
+    height: 180px;
   }
   
   .dashboard-principal .cuadrado-3 {
-    width: 248px;
-    top: 1304px;
-    left: 1192px;
+    width: 230px;
+    top: 1338px;
+    left: 1190px;
     position: absolute;
-    height: 217px;
+    height: 180px;
   }
   
   .dashboard-principal .rectangle-2 {
     position: absolute;
-    width: 560px;
-    height: 344px;
-    top: 1478px;
+    width: 562.5px;
+    height: 289px;
+    top: 1507.5px;
     left: 880px;
   }
   
@@ -105,7 +105,9 @@
   }
   
   .dashboard-principal .div-wrapper {
-    position: relative;
+    position: absolute;
+    top: 1640px;
+    left: 1050px;
     width: 225px;
     height: 79px;
     background-color: #5856d6;
@@ -115,7 +117,7 @@
   .dashboard-principal .div {
     position: absolute;
     top: 28px;
-    left: 16px;
+    left: 25px;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
     color: #ffffff;
@@ -128,14 +130,14 @@
   .dashboard-principal .deseas-revisar-tus {
     position: absolute;
     width: 310px;
-    top: 1282px;
+    top: 1265px;
     left: 1003px;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
     font-size: 28px;
     text-align: center;
-    line-height: 23px;
+    line-height: 30px;
   }
   
   .dashboard-principal .span {
@@ -149,7 +151,7 @@
   .dashboard-principal .text-wrapper-3 {
     position: absolute;
     top: 1576px;
-    left: 967px;
+    left: 974px;
     font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -347,6 +349,8 @@
     height: 24px;
     left: 39px;
   }
+
+
   
   .dashboard-principal .overlap-group-2 {
     position: relative;
@@ -418,6 +422,7 @@
     line-height: 24px;
     letter-spacing: 0;
     white-space: nowrap;
+    z-index: 2; 
   }
   
   .dashboard-principal .label-2 {
@@ -432,6 +437,7 @@
     line-height: 18px;
     letter-spacing: 0;
     white-space: nowrap;
+    z-index: 2; 
   }
   
   .dashboard-principal .element {
@@ -441,8 +447,18 @@
     top: 10px;
     left: 24px;
     object-fit: cover;
+    z-index: 2; 
   }
-  
+
+  .dashboard-principal .union {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+
   .dashboard-principal .frame {
     display: flex;
     width: 275px;
@@ -1143,5 +1159,11 @@
     letter-spacing: -0.20px;
     line-height: normal;
     white-space: nowrap;
+  }
+
+  .dashboard-principal .circle {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
   }
   
