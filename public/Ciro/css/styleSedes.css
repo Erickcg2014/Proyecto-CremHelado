@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f8fc;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #eaeaea;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px 0;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.progress p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-value {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.logout {
+    text-decoration: none;
+    color: #ff5e5e;
+    font-size: 14px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 24px;
+}
+
+.highlight {
+    color: red;
+}
+
+.header input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.section-header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.section-header h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.sedes {
+    margin-bottom: 40px;
+}
+
+.sedes-title h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sedes-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sede-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.sede-card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.sede-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sede-card span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f50057;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.estadisticas h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.estadisticas-chart img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sedes-activas h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.logo img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+    height: auto;    /* Mantiene la proporción original */
+    display: block;
+    margin-bottom: 20px; /* Espaciado debajo de la imagen */
+}

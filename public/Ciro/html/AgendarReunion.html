@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear nueva reunión</title>
+    <link rel="stylesheet" href="../css/styleReunion.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../img/imagix.webp" alt="Logo Imagix">
+            </div>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Retos por sede</a>
+                <a href="#">Retos por área</a>
+                <a href="#">Mis retos asignados</a>
+                <a href="#">Retos clasificados</a>
+                <a href="#">Secciones de ideación</a>
+                <a href="#">Repositorio</a>
+                <a href="#">Sedes</a>
+                <a href="#">Mi comité</a>
+            </nav>
+            <div class="progress">
+                <p>Actividad</p>
+                <div class="progress-bar">
+                    <div class="progress-value" style="width: 46%;"></div>
+                </div>
+                <span>+25%</span>
+            </div>
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h2>Hola Erick 👋, promotor de: <span class="highlight">INNOVACIÓN</span></h2>
+                <input type="text" placeholder="Buscar retos o usuarios">
+            </header>
+
+            <section class="form-section">
+                <h1>Crear nueva reunión</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="customer-name">Customer Name</label>
+                        <input type="text" id="customer-name" value="Veronica Gutierrez" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="meeting-date">Fecha de la Reunión</label>
+                        <input type="date" id="meeting-date" value="2024-05-18">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-time">Hora prevista de Inicio</label>
+                        <input type="time" id="start-time" value="20:10">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-time">Hora prevista de Fin</label>
+                        <input type="time" id="end-time" value="21:30">
+                    </div>
+                    <div class="form-group">
+                        <label for="importance">Importancia</label>
+                        <select id="importance">
+                            <option value="Alta" selected>Alta</option>
+                            <option value="Media">Media</option>
+                            <option value="Baja">Baja</option>
+                        </select>
+                    </div>
+                    <div class="form-group calendar">
+                        <label for="calendar">Calendario</label>
+                        <div id="calendar">
+                            <!-- Aquí iría la integración del calendario -->
+                        </div>
+                    </div>
+                    <button type="submit" class="create-btn">Crear</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
