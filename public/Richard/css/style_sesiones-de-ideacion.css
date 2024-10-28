@@ -620,6 +620,11 @@ body {
   font-size: 16px; /* Default font size */
 }
 
+.red-text {
+  color: #ff0000; /* Yellow text color */
+  font-size: 16px; /* Default font size */
+}
+
 .importance-bar {
   background-color: rgb(119, 35, 255); /* Purple background */
   color: white; /* White text color */
@@ -634,4 +639,51 @@ body {
   font-size: 16px;
 }
 
+.white-bar-rounded {
+  width: calc(100% - 300px); /* Full width minus horizontal margin */
+  background-color: white;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding as needed */
+  margin: 10px auto; /* Small horizontal margin */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  position: relative; /* Position the bar relative to the content */
+}
 
+.gray-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adjust gap as needed */
+}
+
+.gray-bar {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ccc; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.gray-bar1 {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ffffff; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.texto1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  
+  color: #292D32;
+  }
