@@ -464,18 +464,93 @@ body {
   }
   
 .white-bar-rounded-half {
-  width: 46%; /* Adjust width to accommodate margin */
+  width: 45%; /* Adjust width to accommodate margin */
   background-color: white;
-  text-align: center;
-  padding: 20px; /* Adjust padding as needed */
+  text-align: left;
+  padding-left: 20px; /* Adjust padding as needed */
   border-radius: 10px; /* Rounded borders */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   position: relative; /* Position the bar relative to the content */
   display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items:first center; /* Center vertically */
+  align-items: center; /* Center vertically */
   flex-direction: column; /* Stack children vertically */
   margin-right: 150px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between image and title */
+  width: 100%; /* Full width */
+  padding-left: 20px; /* Add padding to align to the left */
+}
+
+.small-icon {
+  margin-top: 11px;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.text-row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Space between texts */
+  margin-bottom: 10px; /* Space between text row and next content */
+  width: 100%; /* Full width */
+}
+.image-row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 10px; /* Space between items */
+  margin-bottom: 10px; /* Space between image row and next content */
+  width: 100%; /* Full width */
+}
+
+
+.image {
+  width: 500px; /* Adjust size as needed */
+  border-radius: 10px; /* Rounded borders */
+  height: 15px; /* Adjust size as needed */
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  width: 100%; /* Full width */
+}
+
+.stacked-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between items */
+  width: 100%; /* Full width */
+  margin-top: 10px;
+}
+
+.bottom-text-row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-left: 85px;
+  gap: 120px; /* Space between texts */
+  width: 100%; /* Full width */
+}
+
+.text143 {
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.text142 {
+  margin-top: 2.5px;
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.text141 {
+  margin-top: 2.5px;
+  font-size: 16px; /* Adjust size as needed */
+  font-weight: bold;
 }
 
 .text-bold-large {
@@ -884,6 +959,114 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px; /* Rounded corners */
   margin-right: 10px; /* Space between purple bar and next element */
 }
+
+.electricity {
+  position: relative;
+  width: 390px;
+  height: 188px;
+  background-color: var(--boxes);
+  border-radius: 16.84px;
+  box-shadow: 0px 20.21px 40.42px -6.74px #274c7729;
+}
+
+.electricity .stats {
+  position: absolute;
+  width: 288px;
+  height: 40px;
+  top: 123px;
+  left: 52px;
+}
+
+.electricity .daily-weekly {
+  position: absolute;
+  width: 344px;
+  height: 30px;
+  top: 62px;
+  left: 24px;
+}
+
+.electricity .overlap-group {
+  position: relative;
+  width: 340px;
+  height: 30px;
+  border-radius: 7.58px;
+}
+
+.electricity .bg {
+  position: absolute;
+  width: 340px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  border-radius: 7.58px;
+  opacity: 0.5;
+}
+
+.electricity .current {
+  position: absolute;
+  width: 170px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-color: #7459d9;
+  border-radius: 7.58px;
+  opacity: 0.5;
+}
+
+.electricity .weekly {
+  position: absolute;
+  height: 14px;
+  top: 7px;
+  left: 216px;
+  font-family: "Lato-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--half-secondary);
+  font-size: 11.8px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.electricity .daily {
+  position: absolute;
+  height: 14px;
+  top: 7px;
+  left: 53px;
+  font-family: "Lato-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--half-secondary);
+  font-size: 11.8px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.electricity .more {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  top: 20px;
+  left: 339px;
+}
+
+.electricity .text-wrapper {
+  position: absolute;
+  width: 130px;
+  height: 48px;
+  top: 20px;
+  left: 24px;
+  font-family: "Lato-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: var(--secondary);
+  font-size: 15.2px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
 
 
 
