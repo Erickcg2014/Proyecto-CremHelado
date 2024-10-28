@@ -109,8 +109,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: 10px;
   object-fit: cover;
+  margin-left: 10px;
 }
 
 .user-greeting {
@@ -363,8 +363,8 @@ body {
   color: #4A148C;
 }
 
-.white-bar {
-  width: calc(100% - 282px); /* Full width minus horizontal margin */
+.white-bar-rounded {
+  width: calc(100% - 300px); /* Full width minus horizontal margin */
   background-color: white;
   text-align: center;
   padding: 10px 0; /* Adjust padding as needed */
@@ -372,71 +372,151 @@ body {
   border-radius: 10px; /* Rounded borders */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   position: relative; /* Position the bar relative to the content */
+}
+
+.gray-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adjust gap as needed */
+}
+
+.gray-bar {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ccc; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.gray-bar1 {
+  width: 25%; /* Adjust width as needed */
+  background-color: #ffffff; /* Gray background */
+  padding: 10px 0; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded borders */
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.texto1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  
+  color: #292D32;
+  }
+
+  .white-bar-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 2%; /* Add gap between the bars */
+  }
+
+  .white-bar-rounded-left {
+    width: 49%; /* Adjust width to accommodate margin */
+    background-color: white;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded borders */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    position: relative; /* Position the bar relative to the content */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 150px;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between image and text container */
+    margin-top: 10px; /* Space between title and content */
+  }
+
+  .left-image {
+    width: 170px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column; /* Stack texts vertically */
+    gap: 5px; /* Space between texts */
+    text-align: left; /* Align texts to the left */
+  }
+
+  .text {
+    font-size: 20px; /* Default font size */
+    
+  }
+
+  .textm {
+    font-size: 16px; /* Default font size */
+    margin-left: 65px;
+    
+  }
+  
+.white-bar-rounded-half {
+  width: 46%; /* Adjust width to accommodate margin */
+  background-color: white;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  position: relative; /* Position the bar relative to the content */
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  align-items:first center; /* Center vertically */
+  flex-direction: column; /* Stack children vertically */
+  margin-right: 150px;
 }
 
-.content {
-  display: flex;
-  align-items: center; /* Align items to the center */
-  gap: 20px; /* Space between circle and text container */
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-
-.circle-wrapper {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.circle {
-  width: 80px; /* Adjust size as needed */
-  height: 80px; /* Adjust size as needed */
-  background: linear-gradient( 180deg, rgb(211.44, 255, 231.45) 0%, rgb(239.06, 255, 246.38) 100% );
-  border-radius: 50%; /* Make it a circle */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.circle-image {
-  width: 60%; /* Adjust size as needed */
-  height: 60%; /* Adjust size as needed */
-  border-radius: 0%; /* Ensure the image is also a circle */
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column; /* Stack texts vertically */
-  gap: 5px; /* Space between texts */
-  text-align: left; /* Align texts to the left */
-}
-
-.text {
-  font-size: 16px; /* Default font size */
-}
-
-.small-images {
-  display: flex;
-  gap: 5px; /* Space between small images */
-}
-
-.text2 {
+.text-bold-large {
   font-size: 20px; /* Default font size */
   font-weight: bold;
 }
 
-.text3 {
-  font-size: 16px; /* Default font size */
-  font-weight: bold;
+.profile-picture {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it a circle */
+}
   
+.name-and-image {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  gap: 5px; /* Space between items */
+}
+
+.name {
+  font-size: 16px; /* Adjust size as needed */
+  font-weight: bold; /* Make text bold */
+}
+
+.small-image {
+  width: 350px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
+.text {
+  font-size: 14px; /* Adjust size as needed */
+}
+
+.text2 {
+  font-size: 14px; /* Adjust size as needed */
+  margin-top: 25px;
 }
 
 .white-bar1 {
-  width: calc(100% - 300px); /* Full width minus horizontal margin */
+  width: calc(100% - 315px); /* Full width minus horizontal margin */
   background-color: white;
   text-align: center;
   padding: 10px; /* Adjust padding as needed */
@@ -449,6 +529,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
+
 
 .content1 {
   display: flex;
@@ -464,10 +545,36 @@ body {
   gap: 10px; /* Space between items */
 }
 
+.text3 {
+  font-size: 20px; /* Default font size */
+  font-weight: bold;
+}
+
+.text14 {
+  font-size: 16px; /* Default font size */
+  font-weight: bold;
+  
+}
+
+.small-image2 {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.small-image3 {
+  width: 18px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
 .right-side {
+  margin-right: 40px;
   display: flex;
   align-items: center; /* Center vertically */
   gap: 10px; /* Space between items */
+}
+
+.text4 {
+  font-size: 16px; /* Default font size */
 }
 
 .rectangle {
@@ -490,11 +597,6 @@ body {
   border-radius: 5px; /* Rounded corners */
 }
 
-.small-image {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-}
-
 .large-image-container {
   width: 100%; /* Full width */
   display: flex; /* Use flexbox */
@@ -505,6 +607,105 @@ body {
 .large-image {
   width: 80%; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
+}
+
+.large-squares-container {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center vertically */
+  width: 79.5%; /* Adjust width as needed */
+  padding: 20px; /* Padding around the content */
+  gap: 20px; /* Space between squares */
+}
+
+.parent-container {
+  width: 100%; /* Full width */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+}
+
+.large-square {
+  width: 300px; /* Adjust size as needed */
+  height: 250px; /* Adjust size as needed */
+  background-color: rgb(232, 192, 255);
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  padding: 10px; /* Padding inside the square */
+  position: relative; /* Position relative for absolute positioning of text */
+}
+
+.profile-picture-large {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.text-top {
+  font-size: 16px; /* Adjust size as needed */
+  font-weight: bold; /* Make text bold */
+  align-self: flex-start; /* Align to the top left */
+  margin-left: 15px;
+  
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: -0.01em;
+
+color: #701290;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.top-content {
+  display: flex;
+  align-items: center; /* Center vertically */
+  width: 100%; /* Full width */
+  
+}
+
+.text-middle {
+  font-size: 14px; /* Adjust size as needed */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to be truly centered */
+
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-bottom {
+  font-size: 14px; /* Adjust size as needed */
+  position: absolute;
+  bottom: 10px; /* Adjust distance from bottom as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust position to be truly centered */
+  
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke: 0.8px rgb(91, 11, 134)
 }
 
 .title {
@@ -518,7 +719,17 @@ body {
   margin-right: auto; /* Push to the left */
 }
 
-.gray-bar {
+.small-image5 {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.gray-text {
+  color: gray;
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.gray-bar2 {
   display: flex;
   align-items: center; /* Center vertically */
   gap: 5px; /* Space between items */
@@ -527,9 +738,10 @@ body {
   border-radius: 5px; /* Rounded corners */
 }
 
-.gray-text {
-  color: gray;
-  font-size: 16px; /* Adjust size as needed */
+.right-side2 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between items */
 }
 
 .custom-table {
@@ -615,71 +827,10 @@ body {
   gap: 5px; /* Space between items */
 }
 
-.right-aligned-content {
-  display: flex;
-  justify-content: flex-end; /* Align items to the right */
-  align-items: center; /* Center vertically */
-  gap: 10px; /* Space between items */
-  width: 100%; /* Full width */
-  padding: 10px 20px; /* Padding around the content */
-}
-
-.purple-text {
-  color: purple;
+.text5 {
   font-size: 16px; /* Adjust size as needed */
-  font-weight: bold;
-}
-
-.small-square {
-  width: 30px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  background-color: #d3d3d3; /* Light gray background */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  border-radius: 5px; /* Rounded corners */
-}
-
-.small-image {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-}
-
-.small-image2 {
-  width: 18px; /* Adjust size as needed */
-  height: 10px; /* Adjust size as needed */
-}
-
-.small-image3 {
-  width: 10px; /* Adjust size as needed */
-  height: 18px; /* Adjust size as needed */
-  background-color: rgba(255, 18, 18, 0);
-}
-
-.small-square3 {
-  width: 30px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  background-color: #d3d3d300; /* Light gray background */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin-right: 5px; /* Space between squares */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-}
-
-.t-bar {
-  width: calc(100% - 282px); /* Full width minus horizontal margin */
-  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-  text-align: center;
-  padding: 10px 0; /* Adjust padding as needed */
-  margin: 10px auto; /* Small horizontal margin */
-  border-radius: 10px; /* Rounded borders */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Fully transparent shadow */
-  position: relative; /* Position the bar relative to the content */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  color: #333; /* Adjust color as needed */
+  margin-right: 10px; /* Space between text and gray bar */
 }
 
 .gray-bar10 {
@@ -692,17 +843,56 @@ body {
 
 .text-purple {
   font-size: 16px; /* Adjust size as needed */
-  color: purple; /* Purple text color */
+  color: rgb(90, 20, 147); /* Purple text color */
   margin-right: 10px; /* Space between purple text and purple bar */
 }
 
 .purple-bar {
   width: 50px; /* Adjust width as needed */
   height: 4px; /* Adjust height as needed */
-  background-color: purple; /* Purple background */
+  background-color: rgb(96, 17, 152); /* Purple background */
   border-radius: 5px; /* Rounded corners */
   margin-right: 10px; /* Space between purple bar and next element */
 }
+
+.text-with-bar {
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 5px; /* Space between bar and text */
+}
+
+.purple-bar1 {
+  width: 50px; /* Adjust width as needed */
+  height: 4px; /* Adjust height as needed */
+  background-color: rgb(136, 0, 248); /* Purple background */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between purple bar and next element */
+}
+
+.purple-bar2 {
+  width: 50px; /* Adjust width as needed */
+  height: 4px; /* Adjust height as needed */
+  background-color: rgb(133, 105, 145); /* Purple background */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between purple bar and next element */
+}
+
+.purple-bar3 {
+  width: 50px; /* Adjust width as needed */
+  height: 4px; /* Adjust height as needed */
+  background-color: rgb(197, 188, 205); /* Purple background */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between purple bar and next element */
+}
+
+
+
+
+
+
+
+
+
 
 
 
