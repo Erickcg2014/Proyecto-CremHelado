@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Archivo CSS principal -->
+  <link rel="stylesheet" href="../css/comite-eval.css">
+
+  <!-- Archivo CSS del menú -->
+  <link rel="stylesheet" href="../css/menu.css">
+  
+  <!-- Título de la página -->
+  <title>Comité Evaluador</title>
+</head>
+<body>
+
+  <div id="menu-container">
+    <!-- Aquí se cargará el menú desde menu.html -->
+  </div>
+
+  <!-- Contenido de la página -->
+  <div class="container">
+    
+    <!-- Contenedor para el marco de fondo blanco -->
+    <div id="frame-container">
+      <h1>COMITÉ EVALUADOR</h1>
+      
+      <div class="filters">
+        <div class="dropdown-wrapper">
+          <select id="importance">
+            <option value="importance">Importancia</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+        <div class="search-wrapper">
+          <input type="text" placeholder="Buscar por usuario">
+          <span class="search-icon">🔍</span>
+        </div>
+      </div>
+      
+      <h2>Mis retos por evaluar</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Area</th>
+            <th>Importancia</th>
+            <th>Correo</th>
+            <th>Sede/Ciudad</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td>Luis Carlos</td>
+            <td>Innovación</td>
+            <td>Importante</td>
+            <td>luiscarlos@gmail.com</td>
+            <td>Cúcuta</td>
+            <td><button class="evaluate-btn">Evaluar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzma@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="evaluate-btn">Evaluar</button></td>
+          </tr>
+          <tr>
+            <td>Maria del Carmen</td>
+            <td>Finanzas</td>
+            <td>Alta</td>
+            <td>mariacrm@gmail.com</td>
+            <td>Manizales</td>
+            <td><button class="evaluate-btn">Evaluar</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="pagination">
+        <span class="page-arrow" onclick="prevPage()">◂</span>
+        <span id="page-info">1</span>
+        <span class="page-arrow" onclick="nextPage()">▸</span>
+        <input id="rows-per-page" type="number" value="2" onchange="updateRowsPerPage()" min="1">
+      </div>      
+    </div>
+  </div>
+
+  <!-- Script principal de la página -->
+  <script src="script.js"></script>
+
+  <!-- Script del menú -->
+  <script src="../js/menu.js"></script>
+
+  <script>
+    // Cargar el contenido de menu.html en el div #menu-container
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+  </script>
+</body>
+</html>
