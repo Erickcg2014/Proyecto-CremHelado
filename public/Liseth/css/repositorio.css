@@ -206,16 +206,6 @@ tbody tr.selected td {
   transition: background-color 0.3s, color 0.3s;
 }
 
-tbody tr:hover .review-btn,
-tbody tr.selected .review-btn {
-  background-color: var(--white);
-  color: var(--iris-100);
-}
-
-.review-btn:hover {
-  background-color: var(--iris-100);
-  color: var(--white);
-}
 
 .sub-table {
   margin-top: 10px;
