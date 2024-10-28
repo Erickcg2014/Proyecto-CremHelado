@@ -29,41 +29,7 @@
           </tr>
         </thead>
         <tbody id="table-body">
-          <tr>
-            <td><img src="../img/perfil-3.png" alt="Perfil de Luis Carlos" class="profile-img"></td> <!-- Imagen de perfil -->
-            <td>Luis Carlos</td>
-            <td>Innovación</td>
-            <td>10/09/2024</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="../img/perfil-4.png" alt="Perfil de Luz Marina" class="profile-img"></td> <!-- Imagen de perfil -->
-            <td>Luz Marina</td>
-            <td>Producción</td>
-            <td>07/09/2024</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="../img/perfil-5.png" alt="Perfil de Maria del Carmen" class="profile-img"></td> <!-- Imagen de perfil -->
-            <td>Maria del Carmen</td>
-            <td>Finanzas</td>
-            <td>11/08/2024</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="../img/perfil-6.png" alt="Perfil de Sandra Milena" class="profile-img"></td> <!-- Imagen de perfil -->
-            <td>Sandra Milena</td>
-            <td>Producción</td>
-            <td>05/07/2024</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="../img/perfil.png" alt="Perfil de Carlos Alberto" class="profile-img"></td> <!-- Imagen de perfil -->
-            <td>Carlos Alberto</td>
-            <td>Innovación</td>
-            <td>10/06/2024</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
+          <!-- Las filas de la tabla se generarán aquí desde JavaScript -->
         </tbody>
       </table> 
       
@@ -73,10 +39,11 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="../js/personas-comite.js"></script>
   <script src="../js/menu.js"></script>
 
   <script>
+    // Cargar el contenido de menu.html en el div #menu-container
     fetch('../html/menu.html')
       .then(response => response.text())
       .then(html => {
