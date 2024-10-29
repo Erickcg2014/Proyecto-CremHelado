@@ -16,7 +16,6 @@ let tableData = [
     // Agrega más datos si es necesario
 ];
 
-// Función para actualizar la tabla
 function updateTable() {
     const tbody = document.querySelector("tbody");
     tbody.innerHTML = ""; // Limpiar contenido actual
@@ -30,7 +29,7 @@ function updateTable() {
                 <td>${item.description}</td>
                 <td>${item.classificationDate}</td>
                 <td>${item.area}</td>
-                <td><button class="filter-btn" onclick="toggleSubTable(this)">Revisar</button></td>
+                <td><button class="review-btn" onclick="toggleSubTable(this)">Revisar</button></td>
                 <td><button class="delete-btn">🗑️</button></td>
                 <td><button class="options-btn">⋮</button></td>
             </tr>
@@ -70,12 +69,21 @@ function updateTable() {
                             </tr>
                         </tbody>
                     </table>
+                    <button class="generate-report-btn" onclick="generateReport()">📄 Generar informe</button>
                 </td>
             </tr>
         `;
         tbody.innerHTML += row;
     });
 }
+
+// Función para generar el informe
+function generateReport() {
+    // Lógica para generar el informe
+    console.log('Informe generado');
+    // Aquí puedes agregar más lógica para manejar la generación del informe
+}
+
 
 
 

@@ -22,13 +22,21 @@
             <select id="status-filter">
                 <option value="">Status</option>
             </select>
-            <input type="text" id="fecha-entrada" placeholder="Fecha de entrada">
-            <input type="text" id="fecha-salida" placeholder="Fecha de finalización">
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-entrada" placeholder="Fecha de entrada" class="flatpickr">
+            </div>
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-salida" placeholder="Fecha de finalización" class="flatpickr">
+            </div>
 
             <div class="search-wrapper">
-              <input type="text" placeholder="Buscar por usuario">
-              <span class="search-icon">🔍</span>
-            </div>  
+                <input type="text" placeholder="Buscar por usuario">
+                <button class="search-btn">🔍</button>
+            </div>            
 
             <!-- Botón de Filtrar -->
             <button class="filter-btn" onclick="applyFilters()">Filtrar</button>
@@ -75,11 +83,20 @@
 
 <!-- Incluir JS de flatpickr -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<!-- Incluir tu configuración de flatpickr -->
 <script src="../js/repositorio.js"></script>
-<!-- Tu script adicional -->
-<script src="script.js"></script>
 <script src="../js/menu.js"></script>
+<script>
+    // Inicializar flatpickr
+    flatpickr('.flatpickr', {
+        dateFormat: "Y-m-d", // Formato de fecha deseado
+    });
 
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+</script>
 </body>
 </html>

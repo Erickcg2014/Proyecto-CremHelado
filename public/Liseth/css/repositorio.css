@@ -186,48 +186,17 @@ tbody tr {
   transition: background-color 0.3s ease;
 }
 
-tbody tr:hover,
-tbody tr.selected {
+/* Ajuste del estilo para el botón de revisar */
+.review-btn {
   background-color: var(--iris-100);
   color: var(--white);
-}
-
-tbody tr:hover td,
-tbody tr.selected td {
-  color: var(--white);
-}
-
-.review-btn {
-  background-color: var(--white);
-  color: var(--iris-100);
   border: 1px solid var(--iris-100);
   padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-
-.sub-table {
-  margin-top: 10px;
-  background-color: rgba(209, 226, 255, 0.5);
   border-radius: 8px;
-  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
-.sub-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.sub-table table thead {
-  background-color: #d1e2ff;
-}
-
-.sub-table table thead th {
-  color: var(--iris-100);
-  padding: 10px;
-  text-align: left;
-}
 
 .pagination {
   display: flex;
@@ -291,10 +260,15 @@ tbody tr.selected td {
   }
 
   input[type="text"],
-  input[type="date"],
-  select,
-  .filter-btn {
-    width: 100%;
+  input[type="date"] {
+    padding: 10px 12px 10px 36px; /* Aumentar padding izquierdo para iconos */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 200px;
+    transition: border-color 0.3s;
+    background-color: #fff;
+    color: #333;
   }
 
   .delete-btn {
@@ -323,4 +297,61 @@ tbody tr.selected td {
     display: block;
     margin-bottom: 10px;
   }
+}
+
+/* Ajuste del estilo para el botón de generar informe */
+.generate-report-btn, .review-btn {
+  padding: 6px 12px;
+  background-color: var(--iris-100); /* Mismo color que el botón de revisar */
+  color: var(--white);
+  border: 1px solid var(--iris-100);
+  border-radius: 8px; /* Igual que el botón de revisar */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin-top: 10px; /* Aumenta el espacio entre el botón y la subtabla */
+}
+
+/* Mantiene el estilo del hover igual que el de revisar */
+.generate-report-btn:hover, .review-btn:hover{
+  background-color: var(--white);
+  color: var(--iris-100);
+  border: 1px solid var(--iris-100);
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
 }

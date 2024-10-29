@@ -6,7 +6,7 @@
   
   <link rel="stylesheet" href="../css/informacion-ciudad.css">
   <link rel="stylesheet" href="../css/menu.css">
-  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <title>Informacion ciudad</title>
 </head>
 <body>
@@ -14,27 +14,26 @@
   <div id="menu-container"></div>
 
   <div class="container">
-
     <div class="frame">
       <div class="column user-details">
         <div class="user-photo">
           <div class="photo-container">
               <img src="../img/bucaramanga.png" alt="Foto de la sede" class="img-small">
           </div>
-      </div>      
+        </div>      
         <div class="contact-details">
             <h4>Número de la sede:</h4>
-            <p>32081239129</p>
+            <p id="sede-number"></p>
             <h4>Email:</h4>
-            <p>gerBucara@gmail.com</p>
+            <p id="sede-email"></p>
             <h4>Mejor área:</h4>
-            <p>Innovación</p>
+            <p id="mejor-area"></p>
             <h4>Retos actualmente en la sede:</h4>
-            <p>300</p>
+            <p id="retos-sede"></p>
             <h4>Número de promotores:</h4>
-            <p>24</p>
+            <p id="numero-promotores"></p>
             <h4>Promedio de retos:</h4>
-            <p>Media</p>
+            <p id="promedio-retos"></p>
         </div>
       </div>
 
@@ -45,8 +44,9 @@
         </h1>
       
         <h4>Retos activos:</h4>
+        <canvas id="myChart" width="10" height="10"></canvas>
 
-        <h1>Ideas innovadoras:</h1  >
+        <h1>Ideas innovadoras:</h1>
         <table>
           <thead>
             <tr>
@@ -56,47 +56,15 @@
               <th>Status</th>
             </tr>
           </thead>
-          <tbody id="table-body">
-            <tr>
-                <td>Luis Carlos</td>
-                <td>Innovación</td>
-                <td>10/09/2024</td>
-                <td class="reciente">Reciente</td>
-            </tr>
-            <tr>
-                <td>Luz Marina</td>
-                <td>Producción</td>
-                <td>07/09/2024</td>
-                <td class="reciente">Reciente</td>
-            </tr>
-            <tr>
-                <td>Pedro Casas</td>
-                <td>Finanzas</td>
-                <td>11/08/2024</td>
-                <td class="antiguo">Antiguo</td>
-            </tr>
-            <tr>
-                <td>Sandra Milena</td>
-                <td>Producción</td>
-                <td>05/07/2024</td>
-                <td class="antiguo">Antiguo</td>
-            </tr>
-            <tr>
-                <td>Carlos Alberto</td>
-                <td>Innovación</td>
-                <td>10/06/2024</td>
-                <td class="reciente">Reciente</td>
-            </tr>
-        </tbody>        
-        </table> 
+          <tbody id="data-table">
+            <!-- Los datos de la tabla se agregarán aquí -->
+          </tbody>
+        </table>          
       </div>
-
     </div> 
   </div> 
 
-  <script src="script.js"></script>
-  <script src="../js/menu.js"></script>
-
+  <!-- Script para cargar el menú -->
   <script>
     fetch('../html/menu.html')
       .then(response => response.text())
@@ -105,5 +73,9 @@
       })
       .catch(error => console.error('Error al cargar menu.html:', error));
   </script>
+
+  <!-- Archivos JavaScript -->
+  <script src="../js/informacion-ciudad.js" defer></script>
+  <script src="../js/menu.js" defer></script>
 </body>
 </html>
