@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../css/personas-comite.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  
+  <title>Personas Comité</title>
+</head>
+<body>
+
+  <div id="menu-container"></div>
+
+  <div class="container">
+    
+    <div class="frame">
+      <h1>Personas que calificaron este reto:</h1>
+      
+      <table>
+        <thead>
+          <tr>
+            <th></th> <!-- Nueva columna para la imagen como primera columna -->
+            <th>Customer Name</th>
+            <th>Area</th>
+            <th>Fecha</th>
+            <th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Las filas de la tabla se generarán aquí desde JavaScript -->
+        </tbody>
+      </table> 
+      
+      <div class="average-rating">
+        <h1>Promedio: ⭐⭐⭐⭐ </h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/personas-comite.js"></script>
+  <script src="../js/menu.js"></script>
+
+  <script>
+    // Cargar el contenido de menu.html en el div #menu-container
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+  </script>
+</body>
+</html>

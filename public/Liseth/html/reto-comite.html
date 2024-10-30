@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../css/reto-comite.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  
+  <title>Reto Comité</title>
+</head>
+<body>
+
+  <div id="menu-container"></div>
+
+  <div class="container">
+    <div class="frame">
+      <div class="column user-details">
+        <h2>Detalles del usuario</h2>
+        <div class="user-photo">
+          <div class="photo-container">
+              <img src="../img/usuario-perf.png" alt="Foto del usuario" class="img-small">
+              <button class="view-button">Visualizar foto</button>
+          </div>
+        </div>      
+        <div class="contact-details">
+            <h2>Detalles de contacto</h2>
+            <h4>Phone Number:</h4>
+            <p id="user-phone-number"></p>
+            <h4>Email:</h4>
+            <p id="user-email"></p>
+        </div>
+        <div class="process-details">
+          <h2>Proceso del reto</h2>
+          <ul class="timeline">
+              <li class="completed">Proceso 1</li>
+              <li class="current"><strong>Proceso 2</strong> <span class="current-label">(current)</span></li>
+              <li>Proceso 3</li>
+              <li>Proceso 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column general-info">
+        <h4>Nombre:</h4>
+        <p id="user-name"></p>
+        <h4>Área:</h4>
+        <p id="user-area"></p>
+        <h4>Fecha del reto:</h4>
+        <p id="challenge-date"></p>
+        <h4>Sede:</h4>
+        <p id="challenge-location"></p>
+        <h4>Área dirigida:</h4>
+        <p id="target-area"></p>
+
+        <div class="additional-info">
+            <h2>Información del usuario</h2>
+            <h4>Número de retos presentados:</h4>
+            <p id="submitted-challenges"></p>
+            <h4>Retos en progreso:</h4>
+            <p id="challenges-in-progress"></p>
+            <h4>Soluciones implementadas:</h4>
+            <p id="implemented-solutions"></p>
+            <h4>Promedio impacto de retos:</h4>
+            <p id="average-impact"></p>
+        </div>
+
+        <div class="rating">
+            <h2>CALIFICA:⭐⭐⭐⭐⭐</h2>
+        </div>
+      </div>
+
+      <div class="column challenge-details">
+        <h2>Detalles del reto</h2>
+        <h3 class="highlight-h3">EL RETO ES: <span class="red-text">SIN SOLUCIÓN</span></h3>
+        <div class="challenge-info">
+          <p class="highlight">Descripción:</p>
+          <p id="challenge-description"></p>
+          <button class="nav-button">></button> <!-- Botón de navegación -->
+      </div>
+      <h3 class="highlight-h3">EJE QUE AFECTA: <span class="red-text">INNOVACIÓN</span></h3>
+      <div class="challenge-info-2">
+          <p class="highlight">Beneficios:</p>
+          <p id="challenge-benefits"></p>
+          <button class="nav-button">></button> <!-- Botón de navegación -->
+      </div>      
+      <div class="shared-images">
+        <h2>Imágenes compartidas</h2>
+        <div class="photo-container">
+            <img src="../img/factura.png" alt="Ejemplo de imagen" class="img-small">
+            <button class="view-button">Cargar archivo</button>
+        </div>
+      </div>
+    </div> 
+  </div> 
+
+  <script src="../js/reto-comite.js" defer></script>
+  <script src="../js/menu.js" defer></script>
+
+  <script>
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+  </script>
+</body>
+</html>

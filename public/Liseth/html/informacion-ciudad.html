@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../css/informacion-ciudad.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Informacion ciudad</title>
+</head>
+<body>
+
+  <div id="menu-container"></div>
+
+  <div class="container">
+    <div class="frame">
+      <div class="column user-details">
+        <div class="user-photo">
+          <div class="photo-container">
+              <img src="../img/bucaramanga.png" alt="Foto de la sede" class="img-small">
+          </div>
+        </div>      
+        <div class="contact-details">
+            <h4>Número de la sede:</h4>
+            <p id="sede-number"></p>
+            <h4>Email:</h4>
+            <p id="sede-email"></p>
+            <h4>Mejor área:</h4>
+            <p id="mejor-area"></p>
+            <h4>Retos actualmente en la sede:</h4>
+            <p id="retos-sede"></p>
+            <h4>Número de promotores:</h4>
+            <p id="numero-promotores"></p>
+            <h4>Promedio de retos:</h4>
+            <p id="promedio-retos"></p>
+        </div>
+      </div>
+
+      <div class="column general-info">
+        <h1>
+          <span style="color: rgb(206, 24, 24);">Sede:</span> 
+          <span style="color: var(--iris-100);"> Bucaramanga</span>
+        </h1>
+      
+        <h4>Retos activos:</h4>
+        <canvas id="myChart" width="10" height="10"></canvas>
+
+        <h1>Ideas innovadoras:</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Area</th>
+              <th>Fecha</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="data-table">
+            <!-- Los datos de la tabla se agregarán aquí -->
+          </tbody>
+        </table>          
+      </div>
+    </div> 
+  </div> 
+
+  <!-- Script para cargar el menú -->
+  <script>
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+  </script>
+
+  <!-- Archivos JavaScript -->
+  <script src="../js/informacion-ciudad.js" defer></script>
+  <script src="../js/menu.js" defer></script>
+</body>
+</html>

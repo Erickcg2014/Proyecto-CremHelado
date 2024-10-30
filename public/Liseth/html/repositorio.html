@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/repositorio.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <title>Repositorio de Buenas Prácticas</title>
+</head>
+<body>
+
+<div id="menu-container"></div>
+
+<div class="container">
+    <div id="frame-container">
+        <h1>REPOSITORIO DE BUENAS PRÁCTICAS</h1>
+        
+        <div class="filters">
+            <select id="status-filter">
+                <option value="">Status</option>
+            </select>
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-entrada" placeholder="Fecha de entrada" class="flatpickr">
+            </div>
+
+            <div class="input-wrapper">
+                <span class="calendar-icon">📅</span>
+                <input type="text" id="fecha-salida" placeholder="Fecha de finalización" class="flatpickr">
+            </div>
+
+            <div class="search-wrapper">
+                <input type="text" placeholder="Buscar por usuario">
+                <button class="search-btn">🔍</button>
+            </div>            
+
+            <!-- Botón de Filtrar -->
+            <button class="filter-btn" onclick="applyFilters()">Filtrar</button>
+        </div>
+
+        <table>
+          <thead>
+              <tr>
+                  <th>Status</th>
+                  <th>
+                      Fecha de entrada 
+                      <span onclick="sortByEntryDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>
+                      Fecha de finalización 
+                      <span onclick="sortByEndDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>ID</th>
+                  <th>Descripción reto</th>
+                  <th>
+                      Fecha de clasificación 
+                      <span onclick="sortByClassificationDate()" style="cursor:pointer;">↕</span>
+                  </th>
+                  <th>Área</th>
+                  <th>Agendar Sesión</th>
+                  <th>Eliminar</th>
+                  <th>Opciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Las filas de la tabla se llenarán dinámicamente -->
+          </tbody>
+      </table>
+      
+        
+        <div class="pagination">
+            <span class="page-arrow" onclick="prevPage()">◂</span>
+            <span id="page-info">1</span>
+            <span class="page-arrow" onclick="nextPage()">▸</span>
+            <input id="rows-per-page" type="number" value="2" onchange="updateRowsPerPage()" min="1">
+        </div>
+    </div>
+</div>
+
+<!-- Incluir JS de flatpickr -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="../js/repositorio.js"></script>
+<script src="../js/menu.js"></script>
+<script>
+    // Inicializar flatpickr
+    flatpickr('.flatpickr', {
+        dateFormat: "Y-m-d", // Formato de fecha deseado
+    });
+
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+</script>
+</body>
+</html>
