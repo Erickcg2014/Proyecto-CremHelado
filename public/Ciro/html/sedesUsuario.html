@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sedesUsuario</title>
+    <link rel="stylesheet" href="../css/sedesUsuario.css">
+    <link rel="stylesheet" href="../css/menu.css"> <!-- Archivo CSS del menú -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Contenedor del menú -->
+    <div id="menu-container"></div>
+
+    <div class="container">
+        <!-- Frame general para contener todo -->
+        <section class="frame general-frame">
+            <p class="quote-text">“El éxito no es casualidad, es el resultado de un esfuerzo constante”</p>
+
+            <section class="sedes">
+                <div class="sede">
+                    <h3 class="title">Bucaramanga</h3>
+                    <img src="../img/bucaramanga.png" alt="Bucaramanga">
+                    <div class="content big-content">
+                        <span class="number">2</span>
+                    </div>
+                </div>
+                <div class="sede">
+                    <h3 class="title">Bogotá</h3>
+                    <img src="../img/bogota.png" alt="Bogotá">
+                    <div class="content">
+                        <span class="number">1</span>
+                    </div>
+                </div>
+                <div class="sede">
+                    <h3 class="title">Cúcuta</h3>
+                    <img src="../img/cucuta.png" alt="Cúcuta">
+                    <div class="content">
+                        <span class="number">3</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="frame">
+                <h2 class="frame-title">Estadísticas del año</h2>
+                <div class="chart">
+                    <canvas id="myChart" width="400" height="300"></canvas> <!-- Ajusta el tamaño del gráfico -->
+                </div>
+            </section>              
+
+            <section class="frame">
+                <h2 class="frame-title">SEDES ACTIVAS</h2>
+                <div id="map"></div> <!-- Contenedor del mapa -->
+            </section>
+        </section> <!-- Fin del frame general -->
+    </div>
+
+    <!-- Leaflet JS para el mapa -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Script para cargar el menú -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/sedesUsuario.js"></script> <!-- Archivo JavaScript para el mapa -->
+
+    <script>
+        // Cargar el contenido de menu.html en el div #menu-container
+        fetch('../html/menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('menu-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error al cargar menu.html:', error));
+    </script>
+</body>
+</html>

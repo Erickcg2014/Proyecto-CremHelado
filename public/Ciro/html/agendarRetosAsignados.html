@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/agendarRetosAsignados.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+  </head>
+  <body>
+    <div id="menu-container">
+      <!-- Aquí se cargará el menú desde menu.html -->
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <a href="#" class="back">← Volver</a>
+        <h1>Agendar mis retos asignados</h1>
+      </div>
+
+      <div class="filters">
+        <select class="importance-filter">
+          <option>Importancia</option>
+          <option>Alta</option>
+          <option>Media</option>
+          <option>Baja</option>
+          <option>Mínima</option>
+        </select>
+        <div class="search">
+          <input type="text" placeholder="Buscar por usuario">
+        </div>
+        <button class="filter-btn">Filtrar</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Customer Name</th>
+            <th>Área</th>
+            <th>Importancia</th>
+            <th>Correo</th>
+            <th>Sede/Ciudad</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luis Carlos</td>
+            <td>Recursos H.</td>
+            <td>Importante</td>
+            <td>luiscarlos@gmail.com</td>
+            <td>Cúcuta</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <tr>
+            <td>Luz Marina</td>
+            <td>Producción</td>
+            <td>Alta</td>
+            <td>luzmarina@gmail.com</td>
+            <td>Bogotá</td>
+            <td><button class="agenda-btn">Agendar</button></td>
+          </tr>
+          <!-- Agregar más filas según sea necesario -->
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <p>Page</p>
+        <select class="page-select">
+          <option>1</option>
+          <!-- Agregar más opciones según sea necesario -->
+        </select>
+        <select class="items-per-page">
+          <option>30</option>
+          <!-- Agregar más opciones según sea necesario -->
+        </select>
+      </div>
+    </div>
+
+    <script>
+      // Cargar el contenido de menu.html en el div #menu-container
+      fetch('../html/menu.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('menu-container').innerHTML = html;
+          })
+          .catch(error => console.error('Error al cargar menu.html:', error));
+    </script>
+  </body>
+</html>
