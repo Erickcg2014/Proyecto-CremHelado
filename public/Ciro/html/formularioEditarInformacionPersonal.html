@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formularioEditarInformacionPersonal</title>
+  <link rel="stylesheet" href="../css/formularioEditarInfoPerso.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+  <div id="menu-container">
+    <!-- Aquí se cargará el menú desde menu.html -->
+  </div>
+
+  <div class="container">
+    <div class="navigation">
+      <a href="#" class="back-button">← Volver</a>
+      <a href="#" class="next-button">Siguiente →</a>
+    </div>
+
+    <div class="user-details">
+      <div class="personal-info">
+        <div class="detalles-personales">
+          <h2>Detalles personales</h2>
+          <div class="profile-photo">
+            <img src="../img/usuario-perf.png" alt="Foto de perfil">
+            <button class="view-photo-btn">Visualiza foto</button>
+          </div>
+          <p><strong>Nombre:</strong> Veronica Gutierrez <span class="edit-icon">✎</span></p>
+          <p><strong>Área a la que pertenece:</strong> Innovación</p>
+          <p><strong>Fecha del reto:</strong> 27 de agosto, 2024</p>
+          <p><strong>Sede:</strong> Bogotá</p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <h2>Detalles de contacto</h2>
+        <p><strong>Phone Number:</strong> 3208882139 <span class="edit-icon">✎</span></p>
+        <p><strong>Email:</strong> VeronicaGuti@gmail.com</p>
+      </div>
+
+      <div class="user-stats">
+        <h2>Información del usuario</h2>
+        <p><strong>Número de retos presentado:</strong> 5</p>
+        <p><strong>Retos en progreso:</strong> 2</p>
+        <p><strong>Soluciones implementadas:</strong> 1</p>
+        <p><strong>Promedio impacto en Retos:</strong> Media</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    fetch('../html/menu.html')
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById('menu-container').innerHTML = html;
+      })
+      .catch(error => console.error('Error al cargar menu.html:', error));
+  </script>
+</body>
+</html>

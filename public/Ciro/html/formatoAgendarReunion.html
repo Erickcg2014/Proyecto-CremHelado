@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatoAgendarReunion</title>
+    <link rel="stylesheet" href="../css/formatoAgendarReunion.css">
+</head>
+<body>
+    <div id="menu-container">
+        <!-- Aquí se cargará el menú desde menu.html -->
+    </div>
+
+    <div class="container">
+        <a href="#" class="back-button">Volver</a>
+        <h1>Crear nueva reunión</h1>
+        <div class="details">
+            <p><strong>Customer Name</strong><br>Veronica Gutierrez</p>
+            <p><strong>Fecha de la Reunión</strong><br>18 de Mayo, 2024</p>
+            <p><strong>Hora prevista de Inicio</strong><br>20:10</p>
+            <p><strong>Hora prevista de Fin</strong><br>21:30</p>
+            <p><strong>Importancia</strong><br>Alta</p>
+        </div>
+        <div class="calendar">
+            <!-- Aquí puedes incrustar tu calendario o un calendario simulado -->
+            <div class="calendar-header">
+                <button>Today</button>
+                <button>&lt;</button>
+                <span>Mayo, 2024</span>
+                <button>&gt;</button>
+                <select>
+                    <option>Month</option>
+                </select>
+            </div>
+            <div class="calendar-grid">
+                <!-- Simulación de los días del mes -->
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <!-- Resto de días hasta el 31 -->
+            </div>
+        </div>
+        <button class="create-button">Crear</button>
+    </div>
+
+    <script>
+        // Cargar el contenido de menu.html en el div #menu-container
+        fetch('../html/menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('menu-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error al cargar menu.html:', error));
+    </script>
+</body>
+</html>
